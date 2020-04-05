@@ -12,9 +12,12 @@ const MainRoute = (props) => {
     const login = props.login
     console.log('ini dari main route',login)
     return(
-        <Stack.Navigator headerMode="none" initialRouteName={login ? "MainMenu" : "Auth"}>
+        <Stack.Navigator headerMode="none">
+            {login ?
             <Stack.Screen name="MainMenu" component={MainMenu} />
+            :
             <Stack.Screen name="Auth" component={Auth} />
+            }
         </Stack.Navigator>
     )
 }

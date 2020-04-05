@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { Button } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { setLogin } from '../redux/action';
+import { CommonActions } from '@react-navigation/native';
 
 const Pengaturan = ({navigation, setLogin}) => {
     return(
@@ -11,7 +12,12 @@ const Pengaturan = ({navigation, setLogin}) => {
         title="Logout"
         onPress={() => {
           setLogin(false);
-          navigation.navigate("Auth")
+          navigation.dispatch(
+            CommonActions.reset({
+              index: 0,
+              routes: [{name: 'Auth'}]
+            })
+          )
         }}
       />
 

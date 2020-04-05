@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { Input, Button } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { setUser, setLogin } from '../redux/action';
+import { CommonActions } from '@react-navigation/native';
 
 const Login = (props) => {
     const [username, setUsername] = useState("");
@@ -13,7 +14,13 @@ const Login = (props) => {
         console.log(username,password)
         props.setUser({username:username, password:password})
         props.setLogin(true);
-        props.navigation.navigate("MainMenu")
+       
+        props.navigation.dispatch(
+          CommonActions.reset({
+            index: 0,
+            routes: [{name: 'MainMenu'}]
+          })
+        )
     }
 
     return(
