@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "844746392793",
+    "firebase_url": "https://damkar-977fe.firebaseio.com",
+    "project_id": "damkar-977fe",
+    "storage_bucket": "damkar-977fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844746392793:android:95d0b8b7a21709f71e6ac8",
+        "android_client_info": {
+          "package_name": "com.userdamkar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844746392793-jud9sak34171jgn1sv9ahbq5on1ba0ss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoGhqKwB9nwPxt3IEwVsj7Ai80Cb0Bu6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844746392793-jud9sak34171jgn1sv9ahbq5on1ba0ss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
